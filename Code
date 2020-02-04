@@ -1,0 +1,82 @@
+#include<stdio.h>
+#include<stdlib.h>
+main()
+{
+	int ch=1,count=0,count1=0,count2=0,count3=0,n,c;
+	printf("\n welcome ");
+	while(ch!=0)
+	{
+		printf("\n usernames are= \n 1230 \n 1231 \n 1232 \n 1233 \n 1234 \n 1235 \n 1236 \n 1237 \n 1238 \n 1239 \n 1240");
+		printf("\n enter the user id=");
+		scanf("%d",&c);
+		if(c==1230||c==1231||c==1232||c==1233||c==1234||c==1235||c==1236||c==1237||c==1238||c==1239||c==1240)
+		{
+		if (c==1230)
+		printf("\n Your name is A");
+		else if (c==1231)
+		printf("\n Your name is B");
+		else if (c==1232)
+		printf("\n Your name is C");
+		else if (c==1233)
+		printf("\n Your name is D");
+		else if (c==1234)
+		printf("\n Your name is E");
+		else if (c==1235)
+		printf("\n Your name is F");
+		else if (c==1236)
+		printf("\n Your name is G");
+		else if (c==1237)
+		printf("\n Your name is H");
+		else if (c==1238)
+		printf("\n Your name is I");
+		else if (c==1239)
+		printf("\n Your name is J");
+		else if (c==1240)
+		printf("\n Your name is K");
+		printf("\n enter your choice \n\n press 1 for congress \ncandidate name is ...... \n\n press 2 for BJP \ncandidate name is ........ \n\n press 3 for AAP \ncandidate name is  ...... \n\n press 4 for JVM \ncandidate name is......\n");
+		scanf("%d",&n);
+		switch(n)
+		{
+			case 1:
+				printf("\n your choice is congress");
+				printf("\n thank you to choose us");
+				printf("\n~~~~~~~~~~~~~~~~~~~~~~~~");
+				count++;
+				break;
+			case 2:
+				printf("\n your choice is BJP");
+				printf("\n thank you to choose us");
+				printf("\n~~~~~~~~~~~~~~~~~~~~~~~~");
+				count1++;
+				break;
+			case 3:
+				printf("\n your choice is AAP");
+				printf("\n thank you to choose us");
+				printf("\n~~~~~~~~~~~~~~~~~~~~~~~~");
+				count2++;
+				break;
+			case 4:
+				printf("\n your choice is JVM");
+				printf("\n thank you to choose us");
+				printf("\n~~~~~~~~~~~~~~~~~~~~~~~~");
+				count3++;
+				break;
+			default:
+				printf("\n sorry your choice is wrong. \n there is no such choice\n");
+				break;
+		}
+		printf("\n press 0 to exit\n");
+		scanf("\n%d",&ch);
+		system("cls");
+		}
+		else
+		{
+		printf("\n your choice is wrong");
+		printf("\n choose again");
+		}
+	}
+	printf("\n number of votes of congress=%d",count);
+	printf("\n number of votes of BJP=%d",count1);
+	printf("\n number of votes of AAP=%d",count2);
+	printf("\n number of votes of JVM=%d",count3);
+}
